@@ -8,6 +8,8 @@
 </head>
 <body>
   <div class="container">
+    
+    <!-- Game Box -->
     <div class="game-box">
       <h1>💥 Rialover Tap Challenge 💥</h1>
       <p id="timer">Time Left: 10s</p>
@@ -15,14 +17,25 @@
       <p id="score">Taps: 0</p>
       <p id="result"></p>
 
-      <!-- ✅ Only these three buttons -->
+      <!-- Buttons -->
       <div class="buttons">
         <button id="startBtn">Start Game</button>
-        <button id="tryAgainBtn" style="display:none;">Try Again</button>
-        <button id="shareBtn" style="display:none; background-color:#000;">Share on X</button>
+        <button id="tryAgainBtn">Try Again</button>
+        <button id="shareBtn">Share on X</button>
+      </div>
+
+      <!-- Optional: Social icons below result -->
+      <div class="social-icons">
+        <a href="https://x.com/yourhandle" target="_blank">
+          <img src="assets/x-logo.png" alt="X Logo" class="icon">
+        </a>
+        <a href="https://discord.com/yourserver" target="_blank">
+          <img src="assets/discord-logo.png" alt="Discord Logo" class="icon">
+        </a>
       </div>
     </div>
 
+    <!-- Info Box -->
     <div class="info-box">
       <h2>🎯 Rialover Status Chart 🎯</h2>
       <p>➡️ 00–15 → “Hmm… you need more Rialo vibes!”</p>
@@ -30,6 +43,7 @@
       <p>➡️ 38–60 → “Wow! True Rialover”</p>
       <p>➡️ 61+ → “Legendary Rialover!”</p>
     </div>
+    
   </div>
 
   <script src="script.js"></script>
