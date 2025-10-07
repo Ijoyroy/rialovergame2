@@ -15,18 +15,11 @@ body {
 }
 
 .game-box, .info-box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   background: white;
-  padding: 25px 30px;
+  padding: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  line-height: 1.6;
-  min-width: 280px;   /* ensures minimum readable width */
-  max-width: 400px;   /* keeps layout balanced */
-  width: fit-content; /* expands according to text */
-  text-align: left;
+  text-align: center;
 }
 
 #rialoLogo {
