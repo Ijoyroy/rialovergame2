@@ -16,7 +16,7 @@ function startGame() {
   resultDisplay.textContent = "";
   startBtn.style.display = "none";
   tryAgainBtn.style.display = "none";
-  timerDisplay.textContent = "Time Left: 10s";
+  timerDisplay.textContent = "Time Left: 15s";
 
   rialoLogo.addEventListener("click", countTap);
   timerInterval = setInterval(updateTimer, 1000);
@@ -49,7 +49,7 @@ function restartGame() {
   tryAgainBtn.style.display = "none";
   resultDisplay.textContent = "";
   scoreDisplay.textContent = "Taps: 0";
-  timerDisplay.textContent = "Time Left: 10s";
+  timerDisplay.textContent = "Time Left: 15s";
 }
 
 startBtn.addEventListener("click", startGame);
