@@ -9,12 +9,12 @@ const timerDisplay = document.getElementById("timer");
 const scoreDisplay = document.getElementById("score");
 const resultDisplay = document.getElementById("result");
 
-// 🎯 Function to get message based on taps
+// 🎯 Message logic based on number of taps
 function getMessage(taps) {
-  if (taps <= 15) return "Hmm… you need more Rialo vibes! 😬";
-  if (taps <= 37) return "Letting there… keep exploring! 🔥";
-  if (taps <= 59) return "Wow! True Rialover! 🚀";
-  return "Congrats! You're Legendary Rialover! 👑";
+  if (taps <= 15) return "😬 Hmm… you need more Rialo vibes!";
+  if (taps <= 37) return "🔥 Getting there… keep exploring!";
+  if (taps <= 60) return "🚀 Wow! True Rialover!";
+  return "👑💖 Legendary Rialover!";
 }
 
 function startGame() {
@@ -48,10 +48,10 @@ function updateTimer() {
 
 function showResult() {
   const message = getMessage(taps);
-  resultDisplay.innerHTML = `${message}<br>💥 You tapped ${taps} times!`;
+  resultDisplay.innerHTML = message; // 🟢 Only show message — no tap count
   tryAgainBtn.style.display = "inline-block";
 }
-  
+
 function restartGame() {
   startBtn.style.display = "inline-block";
   tryAgainBtn.style.display = "none";
