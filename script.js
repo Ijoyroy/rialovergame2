@@ -1,4 +1,4 @@
-let timeLeft = 15;
+let timeLeft = 10;
 let taps = 0;
 let timerInterval;
 
@@ -11,20 +11,20 @@ const resultDisplay = document.getElementById("result");
 
 // 🎯 Function to get message based on taps
 function getMessage(taps) {
-  if (taps <= 15) return "😬 Hmm… you need more Rialo vibes!";
-  if (taps <= 37) return "🔥 Getting there… keep exploring!";
-  if (taps <= 60) return "🚀 Wow! True Rialover!";
-  return "👑💖 Legendary Rialover!";
+  if (taps <= 15) return "Hmm… you need more Rialo vibes! 😬";
+  if (taps <= 37) return "Letting there… keep exploring! 🔥";
+  if (taps <= 59) return "Wow! True Rialover! 🚀";
+  return "Congrats! You're Legendary Rialover! 👑";
 }
 
 function startGame() {
   taps = 0;
-  timeLeft = 15;
+  timeLeft = 10;
   scoreDisplay.textContent = "Taps: 0";
   resultDisplay.textContent = "";
   startBtn.style.display = "none";
   tryAgainBtn.style.display = "none";
-  timerDisplay.textContent = "Time Left: 15s";
+  timerDisplay.textContent = "Time Left: 10s";
 
   rialoLogo.addEventListener("click", countTap);
   timerInterval = setInterval(updateTimer, 1000);
@@ -46,18 +46,12 @@ function updateTimer() {
   }
 }
 
-function showResult() {
-  const message = getMessage(taps);
-  resultDisplay.innerHTML = `${message}<br>💥 You tapped ${taps} times!`;
-  tryAgainBtn.style.display = "inline-block";
-}
-
 function restartGame() {
   startBtn.style.display = "inline-block";
   tryAgainBtn.style.display = "none";
   resultDisplay.textContent = "";
   scoreDisplay.textContent = "Taps: 0";
-  timerDisplay.textContent = "Time Left: 15s";
+  timerDisplay.textContent = "Time Left: 10s";
 }
 
 startBtn.addEventListener("click", startGame);
