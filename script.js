@@ -13,7 +13,7 @@ const resultDisplay = document.getElementById("result");
 function getMessage(taps) {
   if (taps <= 15) return "😬 Hmm… you need more Rialo vibes!";
   if (taps <= 37) return "🔥 Getting there… keep exploring!";
-  if (taps <= 60) return "🚀 Wow! True Rialover!";
+  if (taps <= 52) return "🚀 Wow! True Rialover!";
   return "👑💖 Legendary Rialover!";
 }
 
