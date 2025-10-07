@@ -104,28 +104,3 @@ button:hover {
 #shareBtn:hover {
   background-color: #111;
 }
-
-.status-box {
-  padding: 10px;
-  background-color: #f0f0f0; /* optional light background for status */
-  border-radius: 5px;
-  width: fit-content;
-  margin-bottom: 10px;
-}
-
-.social-icons {
-  display: flex;
-  gap: 10px; /* space between icons */
-}
-
-.social-icons .icon {
-  width: 30px; /* adjust size */
-  height: 30px;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.social-icons .icon:hover {
-  transform: scale(1.1); /* small hover effect */
-}
-
