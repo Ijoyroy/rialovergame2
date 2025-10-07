@@ -1,28 +1,35 @@
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to right, #f7f8fa, #dfe9f3);
-  margin: 0;
-  padding: 50px 20px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
   display: flex;
   gap: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: flex-start;
 }
 
 .game-box, .info-box {
-  background: #fff;
-  padding: 25px 35px;
+  background: white;
+  padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
+}
+
+.info-box p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+.info-box h2 {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 12px;
 }
 
 #rialoLogo {
@@ -33,7 +40,6 @@ body {
   cursor: pointer;
   border: 3px solid #ddd;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  margin: 15px 0;
   transition: transform 0.1s ease;
 }
 
@@ -49,12 +55,44 @@ button {
   border-radius: 10px;
   cursor: pointer;
   background-color: #007bff;
-  color: #fff;
+  color: white;
   transition: background 0.2s;
 }
 
 button:hover {
   background-color: #0056b3;
+}
+
+.info-box {
+  width: 220px;
+}
+
+/* keep the info box layout controlled */
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* keeps paragraphs left-aligned */
+  background: white;
+  padding: 25px 35px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  line-height: 1.7;
+  width: fit-content;
+  min-width: 300px;
+  max-width: 420px;
+  text-align: left;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+/* ensure the H2 spans the box and is centered */
+.info-box h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 12px;   /* space below the title */
+  box-sizing: border-box;
+  font-size: 20px;
 }
 
 #shareBtn {
@@ -63,38 +101,6 @@ button:hover {
   margin-left: 8px;
   font-weight: bold;
 }
-
 #shareBtn:hover {
   background-color: #111;
-}
-
-.info-box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 1.7;
-  width: fit-content;
-  min-width: 300px;
-  max-width: 420px;
-  text-align: left;
-}
-
-.info-box h2 {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 12px;
-  font-size: 20px;
-}
-
-#timer, #score, #result {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-@media (max-width: 900px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
 }
