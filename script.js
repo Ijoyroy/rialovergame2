@@ -46,6 +46,12 @@ function updateTimer() {
   }
 }
 
+function showResult() {
+  const message = getMessage(taps);
+  resultDisplay.innerHTML = `${message}<br>💥 You tapped ${taps} times!`;
+  tryAgainBtn.style.display = "inline-block";
+}
+  
 function restartGame() {
   startBtn.style.display = "inline-block";
   tryAgainBtn.style.display = "none";
