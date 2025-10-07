@@ -1,4 +1,4 @@
-let timeLeft = 10;
+let timeLeft = 15;
 let score = 0;
 let timerInterval;
 
@@ -11,7 +11,7 @@ const resultDisplay = document.getElementById("result");
 
 function startGame() {
   score = 0;
-  timeLeft = 10;
+  timeLeft = 15;
   scoreDisplay.textContent = "Taps: 0";
   resultDisplay.textContent = "";
   startBtn.style.display = "none";
